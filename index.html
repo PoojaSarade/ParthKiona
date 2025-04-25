@@ -89,7 +89,13 @@
                     <input type="tel" placeholder="Your Number" style="background-color: black; color: white;">
                 </div>
             </div>
-            <button class="btn">BOOK NOW</button>
+            <div class="form-group">
+                <div class="form-control">
+                    <i class="fas fa-comment-alt"></i>
+                    <input type="msg" placeholder="Your Message" style="background-color: black; color: white;">
+                </div>
+            </div>
+            <button class="btn">SUBMIT</button>
             <button class="btn btn-phone">📞 +91-9000110110</button>
         </div>
     </div>
@@ -124,7 +130,13 @@
                             <input type="tel" placeholder="Your Number" required>
                         </div>
                     </div>
-                    <button type="submit" class="btn">BOOK NOW</button>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <i class="fas fa-comment-alt"></i>
+                            <input type="msg" placeholder="Your Message" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">SUBMIT</button>
                     <button type="button" class="btn btn-phone">📞 +91-9000110110</button>
                 </form>
             </div>
@@ -191,10 +203,10 @@
             </div>
         </div>
         
-     <div class="query-now" onclick="openParthKionaModal('Query Now')">Query Now</div> 
-    </section>
     
-    <div class="footer-line"></div>
+    </section>
+    <div class="query-now" onclick="openParthKionaModal('Query Now')">Query Now</div> 
+    <!-- <div class="footer-line"></div> -->
 
     <!-- Modal Form -->
     <div id="parthKionaFormModal" class="pk-modal">
@@ -302,7 +314,7 @@
     <!-- /******************************************************************/ -->
     <section class="schedule-section">
         <div class="section-content">
-            <h1 style="padding-left: 20px;">Schedule A Visit</h1>
+            <h1 style="padding-right: 300px;">Schedule A Visit</h1>
             <p class="location">Parth Kiona At Hinjewadi, Pune</p>
             <button class="know-more-btn"onclick="openParthKionaModal('Parth Kiona')">
                 Know More

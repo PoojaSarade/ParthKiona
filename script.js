@@ -155,3 +155,13 @@ document.addEventListener('DOMContentLoaded', function() {
             lightbox.classList.remove('active');
         }
     });
+
+    window.addEventListener('scroll', function () {
+        let scrollY = window.scrollY;
+        let hero = document.querySelector('.hero');
+        let heroBefore = document.querySelector('.hero::before');
+    
+        // Adjust background zoom based on scroll
+        let zoomLevel = 110 + (scrollY / 10); // Adjust the zoom speed
+        heroBefore.style.backgroundSize = `${zoomLevel}% ${zoomLevel}%`;
+    });
